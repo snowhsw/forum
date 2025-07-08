@@ -3,13 +3,12 @@ import { MongoClient } from "mongodb";
 
 export default async function Home() {
 
+    const db = (await connectDB).db("forum");
+    let result = await db.collection('post').find().toArray();
 
-  const db = (await connectDB).db("forum");
-  let result =await db.collection('post').find().toArray();
+    console.log(result)
 
-  console.log(result)
-
-  return (
-    result.map(r => <h3 key={r.id}>{r.content}</h3>)
-  );
+    return (
+        <div>안녕</div>
+    );
 }
