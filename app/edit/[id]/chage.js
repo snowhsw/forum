@@ -12,4 +12,6 @@ const useHandle = (initial) =>{
     return [value,  handleChange]
 }
 
+
+
 export default useHandle
