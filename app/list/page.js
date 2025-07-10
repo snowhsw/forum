@@ -1,7 +1,5 @@
-import DetailLink from "./DetailLink";
 import { connectDB } from "@/util/database";
-import Link from "next/link";
-
+import ListItem from "./listItem";
 export default async function List() {
 
 
@@ -13,15 +11,7 @@ export default async function List() {
     
     return (
         <div className="list-bg">
-            {cleanData.map(r =>
-                <div className="list-item" key={r._id}>
-                    <Link href={`/detail/${r._id}`}>
-                        <h4>{r.title}</h4>
-                        <p>{r.content}</p>
-                    </Link>
-                    <DetailLink id={r._id}/>
-                </div>
-            )}
+            < ListItem result={cleanData} />
         </div>
     )
 }
