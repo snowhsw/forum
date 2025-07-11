@@ -2,7 +2,8 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-
+// 다이나믹 랜더링
+export const dynamic = `fotce-dynamic`
 const DetailLink = ({ id }) => {
 
     // 경로 이동
