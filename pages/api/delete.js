@@ -7,6 +7,7 @@ async function handler (req, res) {
         try{
             const db = ( await connectDB ).db("forum");
             await db.collection("post").deleteOne({_id: new ObjectId(req.body)})
+            
             return res.status(200).json("삭제 완료")
         }
         catch (error) {
