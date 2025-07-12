@@ -2,7 +2,7 @@ import { connectDB } from "@/util/database";
 import ListItem from "./listItem";
 
 // 다이나믹 랜더링
-export const dynamic = `fotce-dynamic`
+// export const dynamic = `fotce-dynamic`
 
 export default async function List() {
 

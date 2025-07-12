@@ -35,7 +35,7 @@ const DetailLink = ({ id }) => {
             <button onClick={(e) => {
                 // URL파라미터 문법
                 fetch('/api/delete', {method:"POST", body: id}).then(()=>{
-                    
+                    console.log("요청보냈어")
                 })
                 //쿼리스트링
                 // fetch('api/test?name=asd&age=7').then()

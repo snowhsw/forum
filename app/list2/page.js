@@ -2,7 +2,7 @@ import { connectDB } from "@/util/database";
 import ListItem from "./listItem";
 
 // 다이나믹 랜더링으로 변경
-export const dynamic = `fotce-dynamic`
+// export const dynamic = `fotce-dynamic`
 
 //캐싱 누군가 처음 방문하면 20초 동안 캐싱(저장)
 export const revalidate = 20;
